@@ -16,6 +16,7 @@ class VideoWindow(QMainWindow):
     def __init__(self, parent=None):
         super(VideoWindow, self).__init__(parent)
         loadUi('main.ui', self)
+        self.showFullScreen()
         #self.setWindowFlag(Qt.FramelessWindowHint)
 
         self.mediaPlayer = QMediaPlayer(None, QMediaPlayer.VideoSurface)
